@@ -1,11 +1,11 @@
 name: First Workflow
 on:
-push:
+  push:
 jobs:
-build:
-runs-on: ubuntu-latest
-steps:
-- name: Checkout code
-uses: actions/Checkout@v4
-- name: Print build started
-run: echo "build started"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+      uses: actions/Checkout@v4
+      - name: Print build started
+      run: echo "build started"
